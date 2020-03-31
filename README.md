@@ -34,7 +34,7 @@ Postico Postgres Client
   createdb name_of_db
   ```
 
-- Create your first table
+Creating a Table
 
 ```SQL
 CREATE TABLE "songs" (
@@ -44,14 +44,18 @@ CREATE TABLE "songs" (
   "track" varchar(120) not null,
   "published" date
 );
-  
+```
+
+**General Structure:**
+
+```SQL
 CREATE TABLE name (
   column-name data-type constraints,
   ...
 );  
 ```
 
-![Tables in Database](images/tables-in-database.jpg)
+**Tables in Database**
 
 - Some table data types discussed were ([data types](https://www.postgresql.org/docs/8.1/static/datatype.html))
   - `serial` auto increment
